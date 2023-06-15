@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+
+<body>
+
+<div class="container">
+        <h1>Seconda Pagina</h1>
+        <p id="output1"></p>
+        <p id="output2"></p>
+        <p id="output3"></p>
+
+        <script>
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const input1Value = urlParams.get('input1');
+            const input2Value = urlParams.get('input2');
+            const input3Value = urlParams.get('input3');
+
+            document.getElementById('output1').innerText = 'Input 1: ' + input1Value;
+            document.getElementById('output2').innerText = 'Input 2: ' + input2Value;
+            document.getElementById('output3').innerText = 'Input 3: ' + input3Value;
+        </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+
+<body>
+<div class="container">
+        <h1>Esercizio 3</h1>
+        <p id="specializzazione"></p>
+        <p id="contesto"></p>
+
+        <script>
+            
+            const json = {
+                "success": true,
+                "data": {
+                    "specializzazione": "Design",
+                    "ambito": {
+                        "contesto": "Enterprise"
+                    }
+                }
+            };
+
+            
+            document.getElementById('specializzazione').innerText = json.data.specializzazione;
+            document.getElementById('contesto').innerText = json.data.ambito.contesto;
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+ <div class="container">
+        <h1>Esercizio 7</h1>
+        <form onsubmit="event.preventDefault(); getP();">
+            <label for="usernameInput">Username:</label>
+            <input type="text" id="usernameInput" required>
+            <button type="submit">Invia</button>
+        </form>
+        <p>Success: <span id="success"></span></p>
+        <p>Data: <span id="data"></span></p>
+    </div>
+
+
+ <script>
+        
+        function getP() {
+            var username = document.getElementById('usernameInput').value;
+            var url = 'http://cicacademy2023.ddns.net/esercizi/getParam?username=' + username;
+            var request = new XMLHttpRequest();
+            request.open('GET', url, true);
+            request.onload=function(e){
+                if(request.status===200){
+                    var response = JSON.parse(request.responseText);
+                    if (response.success === false) {
+                        alert('Errore: ' + response.data);
+                    } else {
+                        
+                        document.getElementById('success').innerText = response.success;
+                        document.getElementById('data').innerText = response.data;
+                    }
+                }
+            };
+            request.send();
+        }
+    </script>
+
+</body>
+</html>

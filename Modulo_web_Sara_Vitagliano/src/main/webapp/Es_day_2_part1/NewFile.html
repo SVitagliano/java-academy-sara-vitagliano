@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Insert title here</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="row">
+<div class="col-sm-6">
+ <h3>Column 1</h3>
+</div>
+<div class="col-sm-6">
+<h3>Column 2</h3>
+</div>
+
+</div>
+
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 1</p>
+</div>
+<div class="col-sm-6">
+<button onclick="somma(2,4),somma(1,9)">Somma</button>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 2</p>
+</div>
+<div class="col-sm-6">
+<button onclick="differenza(3,5),differenza(9,4)">Differenza</button>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 3</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="moltiplicazione(8,2),moltiplicazione(9,2)">Moltiplicazione</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 4</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="divisione(6,3),divisione(10,2)">Divisione</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 5</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="resto(10,3),resto(7,5)">Resto</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 6</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="media(1,2,3)">Media</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 7</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="paridispari(6)">PariODispari</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 8</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="magminuguale(6,8)">Maggiore,Minore,Uguale</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 9</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="stringavuota('ciao')">StringaVuota</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 10</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="sottostringa('ciao')">Sottostringa</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 11</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="vocaleOconsonante('a')">VocaleConsonante</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 12</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick=" divisibile3_5(10)">Divisibile_3_5</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 13</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="arrayInteri()">ArrayInteri</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 14</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="cercaArray(2)">CercaArray</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 15</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="unisciArray()">UnisciArray</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 16</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="estraiArray()">EstraiArray</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 17</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="creaOggetto()">CreaOggetto</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 18</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="creaOggetto()">CreaOggetto</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 19</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="accedeProprietà()">AccediProprietà</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 20</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="sottofunzione(2,4)">Sottofunzione</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 21</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="doppio(2)">Doppio</button>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 22</p>
+</div>
+
+<div class="col-sm-6">
+      <button onclick="lunghezzaStringa('ciao')">Lunghezza</button>
+</div>
+
+</div>
+
+
+<div class="row">
+<div class="col-sm-6">
+<p>Esercizio 23</p>
+</div>
+
+<div class="col-sm-6">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="JavaScript.js"></script>
+</body>
+</html>

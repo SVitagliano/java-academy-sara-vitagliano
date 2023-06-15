@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+        <h1>Esercizio 5</h1>
+        <p id="specializzazione"></p>
+        <p id="contesto"></p>
+
+        <script>
+        
+            
+            var url='http://cicacademy2023.ddns.net/esercizi/getParam?username=pippo';
+            var request=new XMLHttpRequest()
+            request.open('GET',url, true );
+            request.onload=function(e){
+            if(request.status===200){
+            	var response=JSON.parse(request.responseText);
+            	document.getElementById('specializzazione').innerText = response.data.specializzazione;
+                document.getElementById('contesto').innerText = response.data.ambito.contesto;
+             } else {
+            	 console.error(request.statusText);
+            	 }
+             }
+           request.send(null);
+           
+        </script>
+</div>
+
+</body>
+</html>
